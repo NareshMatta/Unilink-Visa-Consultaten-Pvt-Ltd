@@ -26,7 +26,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 90px;
-  margin-top: 5%;
+  margin-top: 3%;
   border-radius: 10px;
   flex-wrap: wrap; /* Ensure content wraps on smaller screens */
 }
@@ -34,7 +34,7 @@
 .step-item {
   text-align: center;
   width: 160px;
-  padding-top: 6%;
+  padding-top: 7%;
 }
 
 .step-icon {
@@ -48,8 +48,8 @@
   font-size: 50px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  /* padding: 5%; */
+  margin-bottom: 25px;
+  
 }
 
 .step-number {
