@@ -1,0 +1,100 @@
+/* StudySingapore.css */
+
+.study-singapore-container {
+  font-family: Arial, sans-serif;
+  padding: 4%;
+  margin: 0px auto;
+  max-width: 1500px;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-container, .right-container {
+  flex: 1;
+  margin: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.university-container {
+  margin-top: 20px;
+}
+.singapore-info {
+  background-color: rgb(202, 185, 185);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #3498db;
+  color: white;
+}
+
+table td a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+.info-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.singapore-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.singapore-info p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+

@@ -1,0 +1,35 @@
+.preferred-partners-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .preferred-partners-heading {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: black;
+  }
+  
+  .preferred-partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  
+  .preferred-partners-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .preferred-partners-logo {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .preferred-partners-logo:hover {
+    transform: scale(1.1);
+  }
+  

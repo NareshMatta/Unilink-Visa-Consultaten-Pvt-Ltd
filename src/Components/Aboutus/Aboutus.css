@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.About {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  width: 98.5vw;
+  margin: 80px auto 0 auto; /* Center the container horizontally */
+  border-radius: 10px;
+  max-width: 1500px;
+  height: 100vh;
+  padding-top: 12%;
+  margin-top: 0%;
+  background: linear-gradient(rgba(240, 180, 91, 0.767), rgba(0, 0, 255, 0.678));
+}
+
+.text-section {
+  width: 50%; /* Increase the width for better text alignment */
+  padding-right: 20px; /* Add padding to the right for spacing */
+  animation: slideInLeft 1s ease-out;
+}
+
+.image-section1 {
+  width: 50%; /* Adjust the width for a balanced layout */
+  position: relative;
+}
+
+.image-section1 .big-image {
+  width: 100%;
+  height: auto; /* Adjust height to auto for proper aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgb(3, 7, 252);
+  border: #979fa3 solid 3px;
+  margin: 0%;
+  /* animation: slideInRight 1s ease-out; */
+}
+
+.text-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px; /* Increase bottom margin for better spacing */
+  color: rgb(0, 0, 3);
+  text-align: center;
+}
+
+.text-section p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: black;
+  text-align: left;
+  margin-left: 22px;
+}
+
+.consultancy-button {
+  display: block;
+  margin: 20px auto 0 auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.consultancy-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.modal-content .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-content .form-group input {
+  width: 48%;
+  padding: 10px;
+  margin-left: 125px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content .recaptcha {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content .recaptcha input {
+  margin-left: 100px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 210px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .About {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height to fit content */
+    padding: 20px;
+  }
+
+  .text-section,
+  .image-section1 {
+    width: 100%;
+  }
+
+  .text-section {
+    padding-right: 0;
+  }
+
+  .consultancy-button {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-section h2 {
+    font-size: 1.5em;
+  }
+
+  .text-section p {
+    font-size: 0.9em;
+    margin-left: 0;
+  }
+
+  .consultancy-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.2em;
+  }
+
+  .modal-content p {
+    font-size: 0.9em;
+  }
+
+  .modal-content .form-group input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .submit-button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h2 {
+    font-size: 1.2em;
+  }
+
+  .text-section p {
+    font-size: 0.8em;
+  }
+
+  .consultancy-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .modal-content {
+    padding: 5px;
+  }
+
+  .modal-content h2 {
+    font-size: 1em;
+  }
+
+  .modal-content p {
+    font-size: 0.8em;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+}

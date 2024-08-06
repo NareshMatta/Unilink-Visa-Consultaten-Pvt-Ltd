@@ -1,0 +1,97 @@
+.footer {
+    background-color: #d5dadaaf;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+    margin-right: 0px; /* Space between the logo and the sections */
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 2;
+    margin-left: 5%;
+  }
+  
+  .footer-column {
+    margin-right: 4%; /* Space between columns */
+    margin-bottom: 20px; /* Space below for smaller screens */
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #1502bd;
+  }
+  
+  /* .footer-column ul li a:hover {
+    color: #007bff;
+  } */
+  
+  .country-list {
+    width: 100%;
+  }
+  
+  .country-list ul {
+    column-count: 2; /* Display countries in two columns */
+    column-gap: 50px; /* Gap between columns */
+    padding: 0;
+    color: #032f8d;
+    list-style: none;
+  }
+  
+  .country-list ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    width: 100%;
+    color: #0c0575;
+    margin-top: 20px; /* Space above contact info */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #090857;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #021464;
+  }
+  

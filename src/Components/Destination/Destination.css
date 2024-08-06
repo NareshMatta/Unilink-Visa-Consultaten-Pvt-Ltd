@@ -1,0 +1,133 @@
+/* Container for the whole component */
+.page {
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  margin-bottom:-0.9% ;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 99vw;
+  /* background-color: #fff; */
+  /* max-width: 200vw; */
+  border-radius: 10px;
+
+}
+
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -1;
+}
+
+/* Container for country cards */
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Style for each country card */
+.country-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border: 2px solid #3d3b3b;
+  border-radius: 5px;
+  cursor: pointer; /* Add cursor pointer on hover effect */
+  perspective: 1000px; /* Add perspective for 3D effect */
+  overflow: hidden;
+}
+
+/* Inner part of the card for 3D rotation */
+.country-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Rotate card on hover */
+.country-card:hover .country-card-inner {
+  transform: rotateY(180deg); /* Rotate card on hover */
+}
+
+/* Front side of the card */
+.country-card-front, .country-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Image on the front side */
+.country-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add flag image style */
+.country-card-front .country-flag {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px; /* Adjust the size of the flag */
+  height: 60px;
+  
+}
+
+/* Back side of the card */
+.country-card-back {
+  background-color: rgb(0, 0, 0); /* Semi-transparent black background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+/* Style for the back side content */
+.country-card-back h3 {
+  margin-bottom: 10px;
+}
+
+.country-card-back p {
+  margin: 0;
+  padding: 0 10px;
+  text-align: left;
+ 
+}
+
+/* Style for the button */
+.country-card-back button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  width: 100%;
+  height: 100%;;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.country-card-back button:hover {
+  background-color: #06b300;
+}

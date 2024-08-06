@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.counseling-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f8f7ff;
+    width: 99vw;
+    border-radius: 10px;
+}
+
+.counseling-text {
+    max-width: 40%;
+}
+
+.counseling-text h2 {
+    font-size: 24px;
+    color: #1e0e62;
+}
+
+.counseling-text p {
+    font-size: 16px;
+    color: #7d7d7d;
+}
+
+.consultation-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e0e62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.counseling-images {
+    max-width: 55%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container {
+    flex: 0 0 95%;
+    text-align: center;
+    margin: 0 10px;
+    opacity: 0.5;
+    filter: blur(5px);
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.image-container img {
+    max-width: 380px;
+    height: 260px;
+    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 5vh;
+}
+
+.image-container h3 {
+    font-size: 18px;
+    color: #1e0e62;
+    margin: 10px 0;
+}
+
+.active {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .counseling-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .counseling-text {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .counseling-images {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .consultation-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .counseling-container {
+        padding: 15px;
+    }
+
+    .counseling-text h2 {
+        font-size: 20px;
+    }
+
+    .counseling-text p {
+        font-size: 14px;
+    }
+
+    .consultation-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .image-container img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .counseling-text h2 {
+        font-size: 18px;
+    }
+
+    .counseling-text p {
+        font-size: 12px;
+    }
+
+    .consultation-button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .image-container img {
+        max-width: 200px;
+    }
+}

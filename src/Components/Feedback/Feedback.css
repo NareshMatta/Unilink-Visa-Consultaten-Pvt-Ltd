@@ -1,0 +1,98 @@
+.feedback-wrapper {
+  position: fixed;
+  top: 50%;
+  right: -1.5%;
+  padding: -1%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.feedback-image {
+  max-width: 50px; /* Set a reasonable max width */
+  max-height: 50px; /* Set a reasonable max height */
+  background-color: rgba(0, 238, 255, 0.966);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feedback-image.slide-in {
+  transform: translateX(-50%);
+}
+
+.feedback-panel {
+  position: absolute;
+  top: 2cap;
+  right: 65px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: -30%;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the panel */
+  width: 25vw; /* Adjust width as needed */
+  border-radius: 50px; /* Add border radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.feedback-panel.show {
+  display: flex;
+}
+
+.emoji-popover {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.emoji-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji-label .emoji {
+  cursor: pointer;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.emoji-label .label {
+  font-size: 14px;
+  color: #000;
+}
+
+.emoji-popover span {
+  cursor: pointer;
+}
+
+.emoji-popover .selected {
+  border: 2px solid blue;
+}
+
+.feedback-input {
+  width: 100%; /* Ensure full width of the panel */
+  margin-bottom: 10px;
+}
+
+.feedback-input input {
+  width: 60%; /* Adjust width to account for padding */
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.submit-button-2 {
+  background-color: #1d7706;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  font-size: 16px; /* Increase font size for better readability */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}

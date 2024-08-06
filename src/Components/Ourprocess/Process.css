@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.process-steps-container {
+  text-align: center;
+  padding: 50px;
+  max-height: 195vh;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 255, 0.288), rgba(255, 0, 0, 0.26));
+}
+
+.process-title {
+  margin-top: 5%;
+  font-size: 3rem;
+  color: #0f0f0f;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 90px;
+  margin-top: 5%;
+  border-radius: 10px;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.step-item {
+  text-align: center;
+  width: 160px;
+  padding-top: 6%;
+}
+
+.step-icon {
+  position: relative;
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  border-radius: 50%;
+  color: white;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* padding: 5%; */
+}
+
+.step-number {
+  position: absolute;
+  bottom: 150%;
+  background-color: rgb(8, 8, 8);
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #0dbdf3;
+  
+}
+
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #141414;
+  padding: 2%;
+}
+
+.step-link {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .process-title {
+    font-size: 2em;
+  }
+
+  .process-steps {
+    padding: 60px;
+    flex-direction: column;
+  }
+
+  .step-item {
+    width: 80%; /* Full width for smaller screens */
+    margin: 20px auto; /* Center step items */
+  }
+
+  .step-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+  }
+
+  .step-number {
+    top: -70px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .step-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-title {
+    font-size: 1.5em;
+  }
+
+  .process-steps {
+    padding: 30px;
+  }
+
+  .step-item {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .step-number {
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .step-title {
+    font-size: 0.8rem;
+    /* */
+  }
+}

@@ -1,0 +1,136 @@
+.study-australia-container {
+  max-width: 1500px;
+  margin: 0px auto;
+  padding: 4%;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.study-australia-container h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.australia-info {
+  background-color: rgb(202, 185, 185);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.institution-container {
+  margin-top: 20px;
+}
+
+.institution-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table-container th, .table-container td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+.right-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.info-container {
+  padding: 20px;
+}
+
+.australia-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.australia-info p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-container {
+    order: 2; /* Place left content below on smaller screens */
+  }
+
+  .right-container {
+    order: 1; /* Place right content above on smaller screens */
+  }
+
+  .info-container {
+    padding-left: 0;
+  }
+
+  .image-container img {
+    border-radius: 0;
+  }
+}

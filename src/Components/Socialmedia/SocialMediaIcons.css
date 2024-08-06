@@ -1,0 +1,44 @@
+.social-icons-container {
+  position: fixed; /* Keep icons fixed */
+  left: 25px;
+  top: 70%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: 1; /* Ensure icons have a higher z-index */
+}
+
+.social-icon {
+  margin-bottom: 10px; /* Adjust spacing between icons */
+}
+
+.icon {
+  font-size: 50px; /* Adjust icon size */
+  height: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: transform 1s ease, color 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.icon:hover {
+  transform: translateX(0);
+}
+
+.social-icon:nth-child(1) .icon {
+  background:  #2654b8; /* Facebook blue */
+}
+
+.social-icon:nth-child(2) .icon {
+  background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa); /* Twitter blue */
+}
+
+.social-icon:nth-child(3) .icon {
+  background: #206aca; /* LinkedIn blue */
+}
+
+.social-icon:nth-child(4) .icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram color */
+}
+
+.social-icon:nth-child(5) .icon {
+  background: linear-gradient(120deg, #ff0000, #282828);
+}

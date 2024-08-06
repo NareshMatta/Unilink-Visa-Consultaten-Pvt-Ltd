@@ -1,0 +1,132 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(39, 38, 38, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: rgb(179, 206, 231);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  max-width: 550px;
+  height: 98vh;
+  box-shadow: 0 4px 8px rgba(48, 43, 43, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top:-1%;
+  padding: 0%;
+
+  right: 0px;
+  background: none;
+  color: rgb(172, 14, 14);
+  /* border: none; */
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #4b0606;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  margin-top: 10px;
+  border: 1px solid #4d4a4a;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.phone-input {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.phone-input span {
+  background: #ddd;
+  padding: 0.8rem;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.phone-input input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  border-left: none;
+}
+
+.terms {
+  display: grid;
+  text-align: left;
+  left: 20%;
+  margin-bottom: 1%;
+  padding-left: 6%;
+  font-size: 13px;
+  margin-left: 4%;
+}
+
+.terms input {
+  margin-left: -60%;
+  margin-bottom: 3%;
+}
+
+.terms label {
+  display: flex;
+  align-items: center;
+}
+
+.terms a {
+  color: #000000;
+  text-align: center;
+}
+
+.submit-button {
+  background: #002042;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-left: 0%;
+ margin-top: 5%;
+  width: 10%;
+  height: 10%;
+}
+
+.submit-button:hover {
+  background: #0463c2;
+}
+/* 
+.success-message {
+  font-size: 1.25rem;
+  color: green;
+  text-align: center;
+  margin: 2rem 0;
+} */
